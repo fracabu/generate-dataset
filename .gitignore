@@ -1,0 +1,41 @@
+# 1. Ambiente Virtuale
+venv/
+.env
+*.env
+
+# 2. Dati Grezzi e Processati
+data/raw/
+data/processed/
+data/features/
+*.csv  # Escludi i file CSV (se non necessario condividere)
+
+# 3. Output e Risultati
+output/
+output/ensemble/
+output/evaluation/
+output/models/
+output/optimization/
+output/predictions/
+output/plots/
+*.json  # Risultati intermedi
+*.joblib  # Modelli salvati
+*.md~  # File report generati
+
+# 4. Log e File Temporanei
+*.log
+*.tmp
+*.out
+
+# 5. File di Compilazione Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 6. Sistema e File di Configurazione
+*.DS_Store
+Thumbs.db
+
+# 7. Checkpoints e Dashboard Temporanei
+.ipynb_checkpoints
+.streamlit/
